@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Generator</h1>
+        <form id="resumeForm">
+            <section>
+                <h2>Personal Details</h2>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+            </section>
+            <section>
+                <h2>Contact Details</h2>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <textarea id="education" placeholder="Education Details" required></textarea>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <textarea id="skills" placeholder="Skills" required></textarea>
+            </section>
+            <section>
+                <h2>Experience</h2>
+                <textarea id="experience" placeholder="Experience" required></textarea>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <textarea id="projects" placeholder="Projects" required></textarea>
+            </section>
+            <section>
+                <h2>Certificates</h2>
+                <textarea id="certificates" placeholder="Certificates" required></textarea>
+            </section>
+            <section>
+                <h2>Languages Known</h2>
+                <textarea id="languages" placeholder="Languages Known" required></textarea>
+            </section>
+            <section>
+                <h2>Declaration</h2>
+                <textarea id="declaration" placeholder="Declaration" required></textarea>
+            </section>
+            <button type="button" onclick="generatePDF()">Generate PDF</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
